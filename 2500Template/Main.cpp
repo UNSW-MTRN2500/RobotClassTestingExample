@@ -1,12 +1,11 @@
 #include <iostream>
-#include "header.h"
-
-int myFun(int a) {
-	return a;
-}
+#include "Robot.hpp"
+#include <string>
 
 int main(void) {
 	std::cout << "Hello World!" << "\n";
+
+	mtrn2500::Robot myRobot("Rob", 2);
 
 	return 0;
 }

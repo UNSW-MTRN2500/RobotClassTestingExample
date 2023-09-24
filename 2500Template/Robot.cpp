@@ -1,31 +1,31 @@
-#include "Robot.h"
+#include "Robot.hpp"
 
 namespace mtrn2500 {
     Robot::Robot(std::string const& name, int const& n) : Robot(name, n, 0) {
     }
 
     Robot::Robot(std::string const& name, int const& n, int const& m)
-        : name_(name), num_wheels_(n), num_sensors_(m) {
+        : mName(name), mNumWheels(n), mNumSensors(m) {
     }
 
     std::string Robot::getName() const {
-        return name_;
+        return mName;
     }
 
     int Robot::getNumWheels() const {
-        return num_wheels_;
+        return mNumWheels;
     }
 
     int Robot::getNumSensors() const {
-        return num_sensors_;
+        return mNumSensors;
     }
 
     void Robot::setName(std::string const& name) {
-        name_ = name;
+        mName = name;
     }
 
     void Robot::move(double x, double y) {
-        pose_ = { x, y };
+        mPose = { x, y };
     }
 
     std::pair<double, double> Robot::localise() {
@@ -33,11 +33,11 @@ namespace mtrn2500 {
     }
 
     double Robot::distance() const {
-        return std::sqrt(std::pow(pose_.first, 2) + std::pow(pose_.second, 2));
+        return std::sqrt(std::pow(mPose.first, 2) + std::pow(mPose.second, 2));
     }
 
     double Robot::angle() const {
-        return std::atan2(pose_.second, pose_.first);
+        return std::atan2(mPose.second, mPose.first);
     }
 
 } // namespace mtrn2500

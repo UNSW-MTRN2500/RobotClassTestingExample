@@ -135,8 +135,7 @@
     <ClCompile Include="Robot.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="header.h" />
-    <ClInclude Include="Robot.h" />
+    <ClInclude Include="Robot.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -1,7 +1,7 @@
 #include "pch.h"
 #include "CppUnitTest.h"
-#include "header.h"
-#include "Main.cpp"
+#include "Robot.hpp"
+#include "Robot.cpp"
 
 namespace MVC = Microsoft::VisualStudio::CppUnitTestFramework;
 
@@ -12,7 +12,11 @@ namespace My2500Testing
         // Robot(std::string name, int n) constructor
         TEST_METHOD(TestMethod1) {
             //Have multiple tests for function
-        }
+        };
+
+        TEST_METHOD(TestMethod2) {
+            //Have multiple tests for function
+        };
     };
 
     TEST_CLASS(StringIntIntConstructor) {

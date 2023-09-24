@@ -24,10 +24,10 @@ namespace mtrn2500 {
         double distance() const;
         double angle() const;
 
-        std::string name_;
-        const int num_wheels_;
-        const int num_sensors_;
-        std::pair<double, double> pose_;
+        std::string mName;
+        const int mNumWheels;
+        const int mNumSensors;
+        std::pair<double, double> mPose;
     };
 
 }  // namespace mtrn2500
